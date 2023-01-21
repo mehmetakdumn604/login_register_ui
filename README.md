@@ -4,13 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Rive animation and authentication screens.
 
-A few resources to get you started if this is your first Flutter project:
+<img width="412" alt="Screen Shot 2023-01-21 at 17 50 45" src="https://user-images.githubusercontent.com/57302933/213872300-f4852170-7fbb-4738-a9ff-90b25005bb82.png">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="440" alt="Screen Shot 2023-01-21 at 17 50 26" src="https://user-images.githubusercontent.com/57302933/213872281-7d11b3b0-4377-4a80-8131-0cf75fccc793.png">
