@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "56129378770",
+    "project_id": "forgot-password-app-584a1",
+    "storage_bucket": "forgot-password-app-584a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56129378770:android:ed65e338806cb42da2d00b",
+        "android_client_info": {
+          "package_name": "com.example.login_register_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56129378770-ankoceoj7pmsbiutlr9fng2pag2ft9li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXFJCMVuVkmEmv6kCWoQ9CtXsPIEgRhaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56129378770-ankoceoj7pmsbiutlr9fng2pag2ft9li.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "56129378770-3c5csg9vgna922k5r8dhe69kt2clroe1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.loginRegisterUi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

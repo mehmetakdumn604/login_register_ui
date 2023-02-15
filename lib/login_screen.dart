@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:login_register_ui/constants.dart';
+import 'package:login_register_ui/forgot_pass_screen.dart';
 import 'package:rive/rive.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -20,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: const Color(0xffD6E2EA),
+      backgroundColor: bgColor,
       body: SizedBox(
         width: size.width,
         height: size.height,
@@ -91,10 +93,22 @@ class _LoginScreenState extends State<LoginScreen> {
 
               SizedBox(
                 width: size.width,
-                child: const Text(
-                  "Forgot your password?",
-                  textAlign: TextAlign.right,
-                  style: TextStyle(decoration: TextDecoration.underline),
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ForgotPassScreen(),
+                          ));
+                    },
+                    child: const Text(
+                      "Forgot your password?",
+                      textAlign: TextAlign.right,
+                      style: TextStyle(decoration: TextDecoration.underline, color: Colors.black),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
