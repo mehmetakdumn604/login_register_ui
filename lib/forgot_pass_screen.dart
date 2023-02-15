@@ -13,43 +13,51 @@ class ForgotPassScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: bgColor,
         elevation: 0,
+        title: const Text(
+          "Forget Your Password?",
+          style: TextStyle(color: Colors.black),
+        ),
+        centerTitle: false,
         iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextField(
-              controller: _controller,
-              onChanged: (value) {},
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                hintText: "Email",
-                prefixIcon: const Icon(Icons.email),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                controller: _controller,
+                onChanged: (value) {},
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  hintText: "Email",
+                  prefixIcon: const Icon(Icons.email),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 20),
-            MaterialButton(
-              minWidth: size.width * .5,
-              height: 50,
-              color: Colors.purple,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              onPressed: () async {
-                if (_controller.text.trim().isEmpty) {
-                  showToast(context, msg: "Lütfen mailinizi giriniz");
-                  return;
-                }
-                await AuhtService.forgotYourPassword(_controller.text.trim());
-              },
-              child: const Text(
-                "Send Link",
-                style: TextStyle(color: Colors.white),
+              const SizedBox(height: 20),
+              MaterialButton(
+                minWidth: size.width * .5,
+                height: 50,
+                color: Colors.purple,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                onPressed: () async {
+                  if (_controller.text.trim().isEmpty) {
+                    showToast(context, msg: "Lütfen mailinizi giriniz");
+                    return;
+                  }
+                  await AuhtService.forgotYourPassword(_controller.text.trim());
+                },
+                child: const Text(
+                  "Send Link",
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
