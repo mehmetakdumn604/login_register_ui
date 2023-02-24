@@ -15,10 +15,10 @@ firebase_options.dart
 google-services.json
 google-services.plist
 GoogleService-Info.plist
-firebase.json
-firebase.indexes.json
-firebase.rules
-.firebaserc
+/firebase.json
+/firebase.indexes.json
+/firebase.rules
+/.firebaserc
 **/ios/Flutter/firebase_app_id_file.json
 
 
