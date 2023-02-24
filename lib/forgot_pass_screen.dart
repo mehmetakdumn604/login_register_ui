@@ -46,7 +46,7 @@ class ForgotPassScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 onPressed: () async {
                   if (_controller.text.trim().isEmpty) {
-                    showToast(context, msg: "Lütfen mailinizi giriniz");
+                    showToast(context, msg: "Please enter your email");
                     return;
                   }
                   await AuhtService.forgotYourPassword(_controller.text.trim());
@@ -79,3 +79,4 @@ class ForgotPassScreen extends StatelessWidget {
     );
   }
 }
+
